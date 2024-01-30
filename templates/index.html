@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-Q/5MVA4sPRwy2HITv6dZZ1orA2kwUCbzx5wbZQb3rzk=';">
+    <title>NormalizeDakuten</title>
+    <link rel="stylesheet" crossorigin href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header class="header">
+        <h1>Normalize Dakuten</h1>
+    </header>
+    <div class="">
+        <form class="form" action="/upload" method="post" enctype="multipart/form-data">
+            <input class="inputForm" type="file" name="file" accept=".xlsx, .xls, .csv">
+            <hr>
+            <button class="inputButton" type="submit">Download</button>
+        </form>
+    </div>
+</body>
+</html>
