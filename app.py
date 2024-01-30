@@ -8,7 +8,8 @@ import os
 
 app = Flask(__name__, template_folder='./templates', static_folder='./static')
 origins = [
-    "https://normalize-dakuten-jzlg-q6n6djj4i-cathandsservice.vercel.app",
+    "https://normalize-dakuten-jzlg-r4xv92tv6-cathandsservice.vercel.app",
+    "https://normalize-dakuten-jzlg-cathandsservice.vercel.app",
     "http://localhost:5173",
 ]
 CORS(app, origins=origins)
