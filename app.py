@@ -47,8 +47,7 @@ def normalize_data(file):
 
 @app.route('/')
 def Home():
-    return "hello, world"
-    # return render_template('index.html')
+    return render_template('index.html')
 
 @app.route('/upload', methods=['POST'])
 def handle_upload():
